@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<link href="snowman.css" rel="stylesheet">
+</head>
+<body>
+    <div id="field">
+        <svg id="canvas" aria-labelledby="title" viewBox="0 0 200 100">
+            <title id="title">SVG SNOWMAN</title>
+            <rect class="grass" x="0"  y="50%"/>
+            <circle class="snow" id="bottom_snowball" cx="50%" cy="50%" r="18"/>
+            <circle class="snow" id="middle__snowball" cx="50%" cy="35%" r="14"/>
+            <circle class="snow" id="top__snowball" cx="50%" cy="20%" r="10"/>
+            <circle class="coal" id="left__eye" r="1" cx="48%" cy="19%" />
+            <circle class="coal" id="right__eye" r="1" cx="52%" cy="19%" />
+            <circle class="coal" id="top__button" r="1" cx="50%" cy="33%" />
+            <circle class="coal" id="middle__button" r="1" cx="50%" cy="38%" />
+            <circle class="coal" id="bottom__button" r="1" cx="50%" cy="43%" />
+            <polygon class="carrot" id="nose" points="99,21 100,28 101,21"  />
+            <line class="stick" id="left__arm" x1="45%" y1="35%" x2="40%" y2="25%">
+                <animate attributeName="x2" values="40%;43%;40%" dur="2s" repeatCount="indefinite" />
+                <animate attributeName="y2" values="25%;23%;25%" dur="2s" repeatCount="indefinite" />
+            </line>
+            <line class="stick" id="right__arm" x1="55%" y1="35%" x2="60%" y2="25%" />
+            <line class="stick" id="left__finger_1" x1="40%" y1="25%" x2="40%" y2="20%">
+                <animate attributeName="x1" values="40%;43%;40%" dur="2s" repeatCount="indefinite" />
+                <animate attributeName="y1" values="25%;23%;25%" dur="2s" repeatCount="indefinite" />
+                <animate attributeName="x2" values="40%;43%;40%" dur="2s" repeatCount="indefinite" />
+                <animate attributeName="y2" values="20%;18%;20%" dur="2s" repeatCount="indefinite" />
+            </line>
+            <line class="stick" id="left__finger_2" x1="40%" y1="25%" x2="38%" y2="21%">
+                <animate attributeName="x1" values="40%;43%;40%" dur="2s" repeatCount="indefinite" />
+                <animate attributeName="y1" values="25%;23%;25%" dur="2s" repeatCount="indefinite" />
+                <animate attributeName="x2" values="38%;41%;38%" dur="2s" repeatCount="indefinite" />
+                <animate attributeName="y2" values="21%;19%;21%" dur="2s" repeatCount="indefinite" />
+            </line>
+            <line class="stick" id="left__finger_3" x1="40%" y1="25%" x2="37%" y2="26%">
+                <animate attributeName="x1" values="40%;43%;40%" dur="2s" repeatCount="indefinite" />
+                <animate attributeName="y1" values="25%;23%;25%" dur="2s" repeatCount="indefinite" />
+                <animate attributeName="x2" values="37%;40%;37%" dur="2s" repeatCount="indefinite" />
+                <animate attributeName="y2" values="26%;23%;26%" dur="2s" repeatCount="indefinite" />
+            </line>
+            <line class="stick" id="right__finger_1" x1="60%" y1="25%" x2="60%" y2="20%" />
+            <line class="stick" id="right__finger_2" x1="60%" y1="25%" x2="62%" y2="21%" />
+            <line class="stick" id="right__finger_3" x1="60%" y1="25%" x2="63%" y2="26%" />
+            <polygon class="top-hat" points="90,14 90,12 93,12 93,4 107,4 107,12 110,12 110,14" />
+            <path class="broomstick" d="M77 20 C 77 20 79 100 79 20 Z">
+                <animateMotion dur="2s" repeatCount="indefinite"
+                path="M0,0 C0,0 10,-3 5,-2 C5 -1 0,0 0,0 z" />
+            </path>
+            <path class="broom" d="M 77 20 C 77 20 70 20 73 10 L 82 10 C 82 10 85 20 79 20 Z">
+                <animateMotion dur="2s" repeatCount="indefinite"
+                path="M0,0 C0,0 10,-3 5,-2 C5 -1 0,0 0,0 z" />
+            </path>
+        </svg>
+    </div>
+</body>
